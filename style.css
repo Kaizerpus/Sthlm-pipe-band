@@ -26,7 +26,7 @@ body::before {
     bottom: 0;
     background-image: 
         linear-gradient(rgba(26, 85, 48, 0.1), rgba(45, 80, 22, 0.15)),
-        url('../images/wp4680145-2733708305.jpg');
+        url('images/wp4680145-2733708305.jpg');
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
@@ -399,16 +399,16 @@ section:last-child {
 
 /* Specifika bilder för varje medlem */
 .member:nth-child(1)::before {
-    background-image: url('../images/bagpiper.jpeg');
+    background-image: url('images/bagpiper.jpeg');
 }
 
 .member:nth-child(2)::before {
-    background-image: url('../images/bagpipe-player-edinburgh-dudelsackpfeifer-ATRK1D-4015951667.jpg');
+    background-image: url('images/bagpipe-player-edinburgh-dudelsackpfeifer-ATRK1D-4015951667.jpg');
     background-position: center -150px;
 }
 
 .member:nth-child(3)::before {
-    background-image: url('../images/b845c012b00c52a4f90b7b5648dfb639-344944581.jpg');
+    background-image: url('images/b845c012b00c52a4f90b7b5648dfb639-344944581.jpg');
     background-size: 60%;
 }
 
