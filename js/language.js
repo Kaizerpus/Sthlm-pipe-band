@@ -173,7 +173,7 @@ class LanguageManager {
             languageSelector.id = 'language-selector';
             languageSelector.innerHTML = `
                 <button class="lang-toggle-btn" title="Byt språk / Switch language">
-                    <img class="flag-img" src="images/flag-sv.svg" alt="Svenska" width="20" height="15">
+                    <img class="flag-img" src="images/se.svg" alt="Svenska" width="20" height="15">
                     <span class="lang-text">SV</span>
                 </button>
             `;
@@ -202,12 +202,12 @@ class LanguageManager {
         
         if (toggleBtn && flagImg && langTextSpan) {
             if (this.currentLanguage === 'sv') {
-                flagImg.src = 'images/flag-sv.svg';
+                flagImg.src = 'images/se.svg';
                 flagImg.alt = 'Svenska';
                 langTextSpan.textContent = 'SV';
                 toggleBtn.title = 'Byt till engelska / Switch to English';
             } else {
-                flagImg.src = 'images/flag-en.svg';
+                flagImg.src = 'images/gb.svg';
                 flagImg.alt = 'English';
                 langTextSpan.textContent = 'EN';
                 toggleBtn.title = 'Byt till svenska / Switch to Swedish';

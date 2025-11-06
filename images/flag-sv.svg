@@ -1,8 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="20" height="15" viewBox="0 0 20 15">
-  <!-- Blå bakgrund -->
-  <rect width="20" height="15" fill="#006AA7"/>
-  <!-- Gult vertikalt streck -->
-  <rect x="6" y="0" width="2" height="15" fill="#FECC00"/>
-  <!-- Gult horisontellt streck -->
-  <rect x="0" y="6" width="20" height="3" fill="#FECC00"/>
-</svg>
