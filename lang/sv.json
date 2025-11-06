@@ -1,9 +1,19 @@
 {
+  "_INSTRUKTIONER": {
+    "_info": "Denna fil innehåller all svensk text på hemsidan",
+    "_hur_man_ändrar": "Ändra bara texten efter kolon (:) inom citattecken",
+    "_exempel": "Från 'titel': 'Gammal text' till 'titel': 'Ny text'",
+    "_varning": "Ändra INTE nyckelnamnen (texten före kolon) eller filstrukturen"
+  },
+  
   "header": {
+    "_beskrivning": "Text som visas i toppen av sidan",
     "title": "Stockholm Pipe Band",
     "tagline": "The Pipes and Drums of the 1st Royal Engineers"
   },
+  
   "nav": {
+    "_beskrivning": "Menytexterna (syns ej på mobil)",
     "home": "Hem",
     "about": "Om Bandet", 
     "performances": "Uppträdanden",
@@ -11,14 +21,18 @@
     "join": "Börja Spela",
     "contact": "Kontakt"
   },
+  
   "hero": {
+    "_beskrivning": "Huvudsektionen med stor titel och beskrivning",
     "title": "Välkommen till Stockholm Pipe Band",
     "description": "Upplev den kraftfulla och majestätiska klangen av traditionella skotska säckpipor. Vi för vidare en urgammal musikalisk tradition med passion och stolthet.",
     "bookButton": "Boka Oss",
     "readMoreButton": "Läs Mer",
     "imageAlt": "Stockholm Pipe Band bandmedlemmar i traditionella skotska kilts"
   },
+  
   "about": {
+    "_beskrivning": "Information om bandet och dess historia",
     "title": "Om The Pipes and Drums of the 1st Royal Engineers",
     "history": "Vår historia är lång och The Pipes & Drums of the 1st Royal Engineers har varit vårt namn från 1987, då vi blev Svea Ingenjörregementes hedersmusikkår. Bandet grundades redan 1968 som The Thistle Pipe Band av Per Colliander, som på allvar införde den skotska höglandssäckpipan i Sverige",
     "specializedIn": "Vi är specialiserade på:",
@@ -31,6 +45,7 @@
     ],
     "musiciansTitle": "Våra Musiker",
     "members": {
+      "_beskrivning": "Information om bandmedlemmarna",
       "lars": {
         "name": "Lars Andersson",
         "role": "Pipe Major",
@@ -51,11 +66,14 @@
       }
     }
   },
+  
   "performances": {
+    "_beskrivning": "Sektion om uppträdanden och evenemang",
     "title": "Uppträdanden & Evenemang",
     "videoTitle": "Se Oss i Aktion",
     "eventTypesTitle": "Vi Spelar Vid",
     "eventTypes": {
+      "_beskrivning": "Olika typer av evenemang vi spelar på",
       "weddings": {
         "title": "💒 Bröllop",
         "description": "Traditionell processionsmusik och ceremoniella melodier"
@@ -74,10 +92,13 @@
       }
     }
   },
+  
   "services": {
+    "_beskrivning": "Bokningsinformation och priser",
     "title": "Boka Stockholm Pipe Band",
     "subtitle": "Våra Tjänster",
     "packages": {
+      "_beskrivning": "Olika paket och priser",
       "solo": {
         "title": "Solo Piper",
         "description": "En erfaren säckpipespelare för intimare tillställningar",
@@ -118,7 +139,9 @@
       }
     }
   },
+  
   "join": {
+    "_beskrivning": "Information om att börja spela säckpipa",
     "title": "Börja Spela Säckpipa",
     "intro": "Är du intresserad av att lära dig spela säckpipa eller gå med i vårt band? Vi välkomnar nya medlemmar på alla nivåer!",
     "pathTitle": "Din Resa till Säckpipespel",
@@ -148,7 +171,9 @@
       "Vi hjälper dig att hitta rätt instrument"
     ]
   },
+  
   "contact": {
+    "_beskrivning": "Kontaktinformation",
     "title": "Kontakta Oss",
     "bandName": "Stockholm Pipe Band",
     "phone": "08-6440610",
@@ -156,16 +181,21 @@
     "address": "Sirapsvägen 9, 123 56 Farsta",
     "followUs": "Följ Oss",
     "socialLinks": {
+      "_beskrivning": "Sociala medier länkar",
       "facebook": "Facebook",
       "instagram": "Instagram", 
       "youtube": "YouTube"
     }
   },
+  
   "footer": {
+    "_beskrivning": "Text i sidfoten",
     "copyright": "© 2025 Stockholm Pipe Band. Alla rättigheter förbehållna.",
     "tagline": "Traditionell skotsk säckpipemusik sedan 2018"
   },
+  
   "meta": {
+    "_beskrivning": "Teknisk text (ändra endast om nödvändigt)",
     "title": "Stockholm Pipe Band - Säckpipeband",
     "menuToggle": "Toggle menu",
     "videoTitle": "Stockholm Pipe Band Performance"
