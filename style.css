@@ -86,6 +86,44 @@ header {
     backdrop-filter: blur(10px);
 }
 
+/* Language Selector Styles */
+#language-selector {
+    position: absolute;
+    top: 1rem;
+    right: 2rem;
+    display: flex;
+    gap: 0.5rem;
+    z-index: 1001;
+}
+
+.lang-btn {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: white;
+    padding: 0.5rem 0.8rem;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.3rem;
+}
+
+.lang-btn:hover {
+    background: rgba(255, 255, 255, 0.2);
+    border-color: rgba(255, 255, 255, 0.5);
+    transform: translateY(-2px);
+}
+
+.lang-btn.active {
+    background: rgba(255, 255, 255, 0.9);
+    color: #1a5530;
+    border-color: rgba(255, 255, 255, 0.9);
+}
+
 /* Header title styling for better readability */
 header h1 {
     color: #b8941f; /* Mörkare guldfärg för bättre läsbarhet */
@@ -888,6 +926,17 @@ footer {
     /* Ta bort navigation helt för mobiler */
     nav {
         display: none !important;
+    }
+    
+    /* Language selector responsive för mobiler */
+    #language-selector {
+        top: 0.5rem;
+        right: 1rem;
+    }
+    
+    .lang-btn {
+        padding: 0.4rem 0.6rem;
+        font-size: 0.8rem;
     }
     
     h1 {

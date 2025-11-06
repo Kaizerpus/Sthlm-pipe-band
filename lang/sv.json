@@ -1,0 +1,173 @@
+{
+  "header": {
+    "title": "Stockholm Pipe Band",
+    "tagline": "The Pipes and Drums of the 1st Royal Engineers"
+  },
+  "nav": {
+    "home": "Hem",
+    "about": "Om Bandet", 
+    "performances": "Uppträdanden",
+    "services": "Boka Oss",
+    "join": "Börja Spela",
+    "contact": "Kontakt"
+  },
+  "hero": {
+    "title": "Välkommen till Stockholm Pipe Band",
+    "description": "Upplev den kraftfulla och majestätiska klangen av traditionella skotska säckpipor. Vi för vidare en urgammal musikalisk tradition med passion och stolthet.",
+    "bookButton": "Boka Oss",
+    "readMoreButton": "Läs Mer",
+    "imageAlt": "Stockholm Pipe Band bandmedlemmar i traditionella skotska kilts"
+  },
+  "about": {
+    "title": "Om The Pipes and Drums of the 1st Royal Engineers",
+    "history": "Vår historia är lång och The Pipes & Drums of the 1st Royal Engineers har varit vårt namn från 1987, då vi blev Svea Ingenjörregementes hedersmusikkår. Bandet grundades redan 1968 som The Thistle Pipe Band av Per Colliander, som på allvar införde den skotska höglandssäckpipan i Sverige",
+    "specializedIn": "Vi är specialiserade på:",
+    "specializations": [
+      "Traditionella skotska melodier och marschmusik",
+      "Ceremonier och högtidliga tillfällen", 
+      "Bröllop och begravningar",
+      "Festivaler och kulturella evenemang",
+      "Företagsevenemang och representationer"
+    ],
+    "musiciansTitle": "Våra Musiker",
+    "members": {
+      "lars": {
+        "name": "Lars Andersson",
+        "role": "Pipe Major",
+        "description": "25+ års erfarenhet, utbildad i Skottland",
+        "quote": "Säckpipan är mer än ett instrument – det är en livsstil."
+      },
+      "erik": {
+        "name": "Erik Johansson", 
+        "role": "Senior Piper",
+        "description": "Specialist på traditionella marschmelodier",
+        "quote": "När tonerna ljuder, förenas historia och hjärta."
+      },
+      "oden": {
+        "name": "Oden Haglind",
+        "role": "Piper", 
+        "description": "Expertis inom ceremonialmusik",
+        "quote": "Det är ganska trevligt att suga och blåsa i en fårmage."
+      }
+    }
+  },
+  "performances": {
+    "title": "Uppträdanden & Evenemang",
+    "videoTitle": "Se Oss i Aktion",
+    "eventTypesTitle": "Vi Spelar Vid",
+    "eventTypes": {
+      "weddings": {
+        "title": "💒 Bröllop",
+        "description": "Traditionell processionsmusik och ceremoniella melodier"
+      },
+      "funerals": {
+        "title": "⚱️ Begravningar", 
+        "description": "Värdiga och respektfulla ceremonier med \"Amazing Grace\" och andra klassiker"
+      },
+      "festivals": {
+        "title": "🎪 Festivaler",
+        "description": "Kulturella evenemang, Highland Games och musikfestivaler"
+      },
+      "corporate": {
+        "title": "🏢 Företagsevent",
+        "description": "Representation, invigningar och speciella tillfällen"
+      }
+    }
+  },
+  "services": {
+    "title": "Boka Stockholm Pipe Band",
+    "subtitle": "Våra Tjänster",
+    "packages": {
+      "solo": {
+        "title": "Solo Piper",
+        "description": "En erfaren säckpipespelare för intimare tillställningar",
+        "features": [
+          "30-45 minuters uppträdande",
+          "Traditionell skotsk dräkt", 
+          "Personlig repertoar efter önskemål"
+        ],
+        "price": "Från 3,500 SEK",
+        "bookingTitle": "📞 Hur du bokar:",
+        "bookingInfo": "Ring +46 70 123 45 67<br>Eller mejla info@stockholmpipeband.se<br><em>Minst 4 veckors förvarning rekommenderas</em>"
+      },
+      "band": {
+        "title": "Fullständigt Band",
+        "description": "3-5 säckpipespelare för större evenemang",
+        "features": [
+          "1-2 timmars uppträdande",
+          "Komplett traditionell utstyrsel",
+          "Processioner och marschmusik",
+          "Interaktion med publiken"
+        ],
+        "price": "Från 8,500 SEK",
+        "bookingTitle": "📞 Hur du bokar:",
+        "bookingInfo": "Ring +46 70 123 45 67<br>Eller mejla info@stockholmpipeband.se<br><em>Minst 6 veckors förvarning rekommenderas</em>"
+      },
+      "workshop": {
+        "title": "Workshop & Utbildning",
+        "description": "Lär dig grunderna i säckpipespel",
+        "features": [
+          "Introduktion till instrumentet",
+          "Grundläggande teknik",
+          "Historik och tradition",
+          "Grupprabatter tillgängliga"
+        ],
+        "price": "Från 2,500 SEK",
+        "bookingTitle": "📞 Hur du bokar:",
+        "bookingInfo": "Ring +46 70 123 45 67<br>Eller mejla info@stockholmpipeband.se<br><em>Flexibla tider - kontakta oss!</em>"
+      }
+    }
+  },
+  "join": {
+    "title": "Börja Spela Säckpipa",
+    "intro": "Är du intresserad av att lära dig spela säckpipa eller gå med i vårt band? Vi välkomnar nya medlemmar på alla nivåer!",
+    "pathTitle": "Din Resa till Säckpipespel",
+    "steps": [
+      {
+        "title": "1. Grundkurs",
+        "description": "Börja med practice chanter och lär dig grundläggande fingersättningar"
+      },
+      {
+        "title": "2. Teknisk Utveckling", 
+        "description": "Utveckla din teknik med traditionella övningar och skalor"
+      },
+      {
+        "title": "3. Fullständiga Säckpipor",
+        "description": "Övergång till fullständiga pipor när du behärskar grunderna"
+      },
+      {
+        "title": "4. Bandmedlemskap",
+        "description": "Gå med i bandet när du uppnått lämplig nivå"
+      }
+    ],
+    "requirementsTitle": "Vad Krävs?",
+    "requirements": [
+      "Passion för musik och skotsk kultur",
+      "Tålamod och dedikation till träning", 
+      "Inget tidigare musikerfarenhet nödvändigt",
+      "Vi hjälper dig att hitta rätt instrument"
+    ]
+  },
+  "contact": {
+    "title": "Kontakta Oss",
+    "bandName": "Stockholm Pipe Band",
+    "phone": "08-6440610",
+    "email": "info@sackpipa.com",
+    "address": "Sirapsvägen 9, 123 56 Farsta",
+    "followUs": "Följ Oss",
+    "socialLinks": {
+      "facebook": "Facebook",
+      "instagram": "Instagram", 
+      "youtube": "YouTube"
+    }
+  },
+  "footer": {
+    "copyright": "© 2025 Stockholm Pipe Band. Alla rättigheter förbehållna.",
+    "tagline": "Traditionell skotsk säckpipemusik sedan 2018"
+  },
+  "meta": {
+    "title": "Stockholm Pipe Band - Säckpipeband",
+    "menuToggle": "Toggle menu",
+    "videoTitle": "Stockholm Pipe Band Performance"
+  }
+}

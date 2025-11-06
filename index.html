@@ -7,18 +7,19 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="default">
     <meta name="theme-color" content="#1a5530">
-    <title>Stockholm Pipe Band - Säckpipeband</title>
+    <title data-lang="meta.title">Stockholm Pipe Band - Säckpipeband</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <script src="js/language.js"></script>
 </head>
 <body>
     <header>
         <div class="header-content">
-            <h1>Stockholm Pipe Band</h1>
-            <p class="tagline">The Pipes and Drums of the 1st Royal Engineers</p>
+            <h1 data-lang="header.title">Stockholm Pipe Band</h1>
+            <p class="tagline" data-lang="header.tagline">The Pipes and Drums of the 1st Royal Engineers</p>
 
             <!-- Mobile menu toggle -->
-            <button class="mobile-menu-toggle" onclick="toggleMobileMenu()" aria-label="Toggle menu">
+            <button class="mobile-menu-toggle" onclick="toggleMobileMenu()" aria-label="Toggle menu" data-lang="meta.menuToggle">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -26,12 +27,12 @@
             
             <nav id="main-nav">
                 <ul>
-                    <li><a href="#home" onclick="closeMobileMenu()">Hem</a></li>
-                    <li><a href="#about" onclick="closeMobileMenu()">Om Bandet</a></li>
-                    <li><a href="#performances" onclick="closeMobileMenu()">Uppträdanden</a></li>
-                    <li><a href="#services" onclick="closeMobileMenu()">Boka Oss</a></li>
-                    <li><a href="#join" onclick="closeMobileMenu()">Börja Spela</a></li>
-                    <li><a href="#contact" onclick="closeMobileMenu()">Kontakt</a></li>
+                    <li><a href="#home" onclick="closeMobileMenu()" data-lang="nav.home">Hem</a></li>
+                    <li><a href="#about" onclick="closeMobileMenu()" data-lang="nav.about">Om Bandet</a></li>
+                    <li><a href="#performances" onclick="closeMobileMenu()" data-lang="nav.performances">Uppträdanden</a></li>
+                    <li><a href="#services" onclick="closeMobileMenu()" data-lang="nav.services">Boka Oss</a></li>
+                    <li><a href="#join" onclick="closeMobileMenu()" data-lang="nav.join">Börja Spela</a></li>
+                    <li><a href="#contact" onclick="closeMobileMenu()" data-lang="nav.contact">Kontakt</a></li>
                 </ul>
             </nav>
         </div>
@@ -40,29 +41,29 @@
         <!-- Hero Section -->
         <section id="home" class="hero">
             <div class="hero-content">
-                <h2>Välkommen till Stockholm Pipe Band</h2>
-                <p class="hero-description">Upplev den kraftfulla och majestätiska klangen av traditionella skotska säckpipor. Vi för vidare en urgammal musikalisk tradition med passion och stolthet.</p>
+                <h2 data-lang="hero.title">Välkommen till Stockholm Pipe Band</h2>
+                <p class="hero-description" data-lang="hero.description">Upplev den kraftfulla och majestätiska klangen av traditionella skotska säckpipor. Vi för vidare en urgammal musikalisk tradition med passion och stolthet.</p>
                 <div class="hero-image-placeholder">
-                    <img src="images/gruppfoto-300x93.jpg" alt="Stockholm Pipe Band bandmedlemmar i traditionella skotska kilts" >
+                    <img src="images/gruppfoto-300x93.jpg" data-lang="hero.imageAlt" alt="Stockholm Pipe Band bandmedlemmar i traditionella skotska kilts" >
                 </div>
                 <div class="cta-buttons">
-                    <a href="#services" class="btn-primary">Boka Oss</a>
-                    <a href="#about" class="btn-secondary">Läs Mer</a>
+                    <a href="#services" class="btn-primary" data-lang="hero.bookButton">Boka Oss</a>
+                    <a href="#about" class="btn-secondary" data-lang="hero.readMoreButton">Läs Mer</a>
                 </div>
             </div>
         </section>
 
         <!-- About Section -->
         <section id="about">
-            <h2>Om The Pipes and Drums of the 1st Royal Engineers</h2>
+            <h2 data-lang="about.title">Om The Pipes and Drums of the 1st Royal Engineers</h2>
             <div class="about-content">
                 <div class="about-text">
-                    <p>Vår historia är lång och The Pipes & Drums of the 1st Royal Engineers har varit vårt namn från 1987, då vi blev Svea Ingenjörregementes hedersmusikkår. Bandet grundades redan 1968 som The Thistle Pipe Band av Per Colliander, som på allvar införde den skotska höglandssäckpipan i Sverige</p>
+                    <p data-lang="about.history">Vår historia är lång och The Pipes & Drums of the 1st Royal Engineers har varit vårt namn från 1987, då vi blev Svea Ingenjörregementes hedersmusikkår. Bandet grundades redan 1968 som The Thistle Pipe Band av Per Colliander, som på allvar införde den skotska höglandssäckpipan i Sverige</p>
                     
                     <br>
                     
-                    <p>Vi är specialiserade på:</p>
-                    <ul>
+                    <p data-lang="about.specializedIn">Vi är specialiserade på:</p>
+                    <ul data-lang="about.specializations">
                         <li>Traditionella skotska melodier och marschmusik</li>
                         <li>Ceremonier och högtidliga tillfällen</li>
                         <li>Bröllop och begravningar</li>
@@ -72,25 +73,25 @@
                 </div>
                 
                 <div class="band-members">
-                    <h3>Våra Musiker</h3>
+                    <h3 data-lang="about.musiciansTitle">Våra Musiker</h3>
                     <div class="members-grid">
                         <div class="member">
-                            <h4>Lars Andersson</h4>
-                            <p>Pipe Major</p>
-                            <p>25+ års erfarenhet, utbildad i Skottland</p>
-                            <span class="quote">"Säckpipan är mer än ett instrument – det är en livsstil."</span>
+                            <h4 data-lang="member.lars.name">Lars Andersson</h4>
+                            <p data-lang="member.lars.role">Pipe Major</p>
+                            <p data-lang="member.lars.description">25+ års erfarenhet, utbildad i Skottland</p>
+                            <span class="quote" data-lang="member.lars.quote">"Säckpipan är mer än ett instrument – det är en livsstil."</span>
                         </div>
                         <div class="member">
-                            <h4>Erik Johansson</h4>
-                            <p>Senior Piper</p>
-                            <p>Specialist på traditionella marschmelodier</p>
-                            <span class="quote">"När tonerna ljuder, förenas historia och hjärta."</span>
+                            <h4 data-lang="member.erik.name">Erik Johansson</h4>
+                            <p data-lang="member.erik.role">Senior Piper</p>
+                            <p data-lang="member.erik.description">Specialist på traditionella marschmelodier</p>
+                            <span class="quote" data-lang="member.erik.quote">"När tonerna ljuder, förenas historia och hjärta."</span>
                         </div>
                         <div class="member">
-                            <h4>Oden Haglind</h4>
-                            <p>Piper</p>
-                            <p>Expertis inom ceremonialmusik</p>
-                            <span class="quote">"Det är ganska trevligt att suga och blåsa i en fårmage."</span>
+                            <h4 data-lang="member.oden.name">Oden Haglind</h4>
+                            <p data-lang="member.oden.role">Piper</p>
+                            <p data-lang="member.oden.description">Expertis inom ceremonialmusik</p>
+                            <span class="quote" data-lang="member.oden.quote">"Det är ganska trevligt att suga och blåsa i en fårmage."</span>
                         </div>
                     </div>
                 </div>
@@ -99,14 +100,15 @@
 
         <!-- Performances Section -->
         <section id="performances">
-            <h2>Uppträdanden & Evenemang</h2>
+            <h2 data-lang="performances.title">Uppträdanden & Evenemang</h2>
             <div class="performances-content">
                 <div class="video-showcase">
-                    <h3>Se Oss i Aktion</h3>
+                    <h3 data-lang="performances.videoTitle">Se Oss i Aktion</h3>
                     <div class="video-container">
                         <iframe 
                             src="https://www.youtube.com/embed/1t_wMahQ64Y?start=2" 
                             title="Stockholm Pipe Band Performance" 
+                            data-lang="meta.videoTitle"
                             frameborder="0" 
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
                             allowfullscreen>
@@ -115,23 +117,23 @@
                 </div>
                 
                 <div class="event-types">
-                    <h3>Vi Spelar Vid</h3>
+                    <h3 data-lang="performances.eventTypesTitle">Vi Spelar Vid</h3>
                     <div class="event-type-grid">
                         <div class="event-type">
-                            <h4>💒 Bröllop</h4>
-                            <p>Traditionell processionsmusik och ceremoniella melodier</p>
+                            <h4 data-lang="event.weddings.title">💒 Bröllop</h4>
+                            <p data-lang="event.weddings.description">Traditionell processionsmusik och ceremoniella melodier</p>
                         </div>
                         <div class="event-type">
-                            <h4>⚱️ Begravningar</h4>
-                            <p>Värdiga och respektfulla ceremonier med "Amazing Grace" och andra klassiker</p>
+                            <h4 data-lang="event.funerals.title">⚱️ Begravningar</h4>
+                            <p data-lang="event.funerals.description">Värdiga och respektfulla ceremonier med "Amazing Grace" och andra klassiker</p>
                         </div>
                         <div class="event-type">
-                            <h4>🎪 Festivaler</h4>
-                            <p>Kulturella evenemang, Highland Games och musikfestivaler</p>
+                            <h4 data-lang="event.festivals.title">🎪 Festivaler</h4>
+                            <p data-lang="event.festivals.description">Kulturella evenemang, Highland Games och musikfestivaler</p>
                         </div>
                         <div class="event-type">
-                            <h4>🏢 Företagsevent</h4>
-                            <p>Representation, invigningar och speciella tillfällen</p>
+                            <h4 data-lang="event.corporate.title">🏢 Företagsevent</h4>
+                            <p data-lang="event.corporate.description">Representation, invigningar och speciella tillfällen</p>
                         </div>
                     </div>
                 </div>
@@ -140,59 +142,59 @@
 
         <!-- Services Section -->
         <section id="services">
-            <h2>Boka Stockholm Pipe Band</h2>
+            <h2 data-lang="services.title">Boka Stockholm Pipe Band</h2>
             <div class="services-content">
                 <div class="booking-info">
-                    <h3>Våra Tjänster</h3>
+                    <h3 data-lang="services.subtitle">Våra Tjänster</h3>
                     <div class="service-packages">
                         <div class="package">
-                            <h4>Solo Piper</h4>
-                            <p>En erfaren säckpipespelare för intimare tillställningar</p>
-                            <ul>
+                            <h4 data-lang="package.solo.title">Solo Piper</h4>
+                            <p data-lang="package.solo.description">En erfaren säckpipespelare för intimare tillställningar</p>
+                            <ul data-lang="package.solo.features">
                                 <li>30-45 minuters uppträdande</li>
                                 <li>Traditionell skotsk dräkt</li>
                                 <li>Personlig repertoar efter önskemål</li>
                             </ul>
-                            <p class="price">Från 3,500 SEK</p>
+                            <p class="price" data-lang="package.solo.price">Från 3,500 SEK</p>
                             <div class="booking-tooltip">
-                                <h5>📞 Hur du bokar:</h5>
-                                <p>Ring <strong>+46 70 123 45 67</strong><br>
+                                <h5 data-lang="package.solo.bookingTitle">📞 Hur du bokar:</h5>
+                                <p data-lang="package.solo.bookingInfo">Ring <strong>+46 70 123 45 67</strong><br>
                                 Eller mejla <strong>info@stockholmpipeband.se</strong><br>
                                 <em>Minst 4 veckors förvarning rekommenderas</em></p>
                             </div>
                         </div>
                         
                         <div class="package featured">
-                            <h4>Fullständigt Band</h4>
-                            <p>3-5 säckpipespelare för större evenemang</p>
-                            <ul>
+                            <h4 data-lang="package.band.title">Fullständigt Band</h4>
+                            <p data-lang="package.band.description">3-5 säckpipespelare för större evenemang</p>
+                            <ul data-lang="package.band.features">
                                 <li>1-2 timmars uppträdande</li>
                                 <li>Komplett traditionell utstyrsel</li>
                                 <li>Processioner och marschmusik</li>
                                 <li>Interaktion med publiken</li>
                             </ul>
-                            <p class="price">Från 8,500 SEK</p>
+                            <p class="price" data-lang="package.band.price">Från 8,500 SEK</p>
                             <div class="booking-tooltip">
-                                <h5>📞 Hur du bokar:</h5>
-                                <p>Ring <strong>+46 70 123 45 67</strong><br>
+                                <h5 data-lang="package.band.bookingTitle">📞 Hur du bokar:</h5>
+                                <p data-lang="package.band.bookingInfo">Ring <strong>+46 70 123 45 67</strong><br>
                                 Eller mejla <strong>info@stockholmpipeband.se</strong><br>
                                 <em>Minst 6 veckors förvarning rekommenderas</em></p>
                             </div>
                         </div>
                         
                         <div class="package">
-                            <h4>Workshop & Utbildning</h4>
-                            <p>Lär dig grunderna i säckpipespel</p>
-                            <ul>
+                            <h4 data-lang="package.workshop.title">Workshop & Utbildning</h4>
+                            <p data-lang="package.workshop.description">Lär dig grunderna i säckpipespel</p>
+                            <ul data-lang="package.workshop.features">
                                 <li>Introduktion till instrumentet</li>
                                 <li>Grundläggande teknik</li>
                                 <li>Historik och tradition</li>
                                 <li>Grupprabatter tillgängliga</li>
                             </ul>
-                            <p class="price">Från 2,500 SEK</p>
+                            <p class="price" data-lang="package.workshop.price">Från 2,500 SEK</p>
                             <div class="booking-tooltip">
-                                <h5>📞 Hur du bokar:</h5>
-                                <p>Ring <strong>+46 70 123 45 67</strong><br>
+                                <h5 data-lang="package.workshop.bookingTitle">📞 Hur du bokar:</h5>
+                                <p data-lang="package.workshop.bookingInfo">Ring <strong>+46 70 123 45 67</strong><br>
                                 Eller mejla <strong>info@stockholmpipeband.se</strong><br>
                                 <em>Flexibla tider - kontakta oss!</em></p>
                             </div>
@@ -204,35 +206,35 @@
 
         <!-- Join Section -->
         <section id="join">
-            <h2>Börja Spela Säckpipa</h2>
+            <h2 data-lang="join.title">Börja Spela Säckpipa</h2>
             <div class="join-content">
-                <p>Är du intresserad av att lära dig spela säckpipa eller gå med i vårt band? Vi välkomnar nya medlemmar på alla nivåer!</p>
+                <p data-lang="join.intro">Är du intresserad av att lära dig spela säckpipa eller gå med i vårt band? Vi välkomnar nya medlemmar på alla nivåer!</p>
                 
                 <div class="learning-path">
-                    <h3>Din Resa till Säckpipespel</h3>
+                    <h3 data-lang="join.pathTitle">Din Resa till Säckpipespel</h3>
                     <div class="steps">
                         <div class="step">
-                            <h4>1. Grundkurs</h4>
-                            <p>Börja med practice chanter och lär dig grundläggande fingersättningar</p>
+                            <h4 data-lang="step.0.title">1. Grundkurs</h4>
+                            <p data-lang="step.0.description">Börja med practice chanter och lär dig grundläggande fingersättningar</p>
                         </div>
                         <div class="step">
-                            <h4>2. Teknisk Utveckling</h4>
-                            <p>Utveckla din teknik med traditionella övningar och skalor</p>
+                            <h4 data-lang="step.1.title">2. Teknisk Utveckling</h4>
+                            <p data-lang="step.1.description">Utveckla din teknik med traditionella övningar och skalor</p>
                         </div>
                         <div class="step">
-                            <h4>3. Fullständiga Säckpipor</h4>
-                            <p>Övergång till fullständiga pipor när du behärskar grunderna</p>
+                            <h4 data-lang="step.2.title">3. Fullständiga Säckpipor</h4>
+                            <p data-lang="step.2.description">Övergång till fullständiga pipor när du behärskar grunderna</p>
                         </div>
                         <div class="step">
-                            <h4>4. Bandmedlemskap</h4>
-                            <p>Gå med i bandet när du uppnått lämplig nivå</p>
+                            <h4 data-lang="step.3.title">4. Bandmedlemskap</h4>
+                            <p data-lang="step.3.description">Gå med i bandet när du uppnått lämplig nivå</p>
                         </div>
                     </div>
                 </div>
                 
                 <div class="requirements">
-                    <h3>Vad Krävs?</h3>
-                    <ul>
+                    <h3 data-lang="join.requirementsTitle">Vad Krävs?</h3>
+                    <ul data-lang="join.requirements">
                         <li>Passion för musik och skotsk kultur</li>
                         <li>Tålamod och dedikation till träning</li>
                         <li>Inget tidigare musikerfarenhet nödvändigt</li>
@@ -244,22 +246,22 @@
 
         <!-- Contact Section -->
         <section id="contact">
-            <h2>Kontakta Oss</h2>
+            <h2 data-lang="contact.title">Kontakta Oss</h2>
             <div class="contact-content">
                 <div class="contact-info">
-                    <h3>Stockholm Pipe Band</h3>
+                    <h3 data-lang="contact.bandName">Stockholm Pipe Band</h3>
                     <div class="contact-details">
-                        <p><strong>Telefon:</strong> <a href="tel:+46701234567">08-6440610</a></p>
-                        <p><strong>E-post:</strong> <a href="mailto:info@stockholmpipeband.se"> info@sackpipa.com</a></p>
-                        <p><strong>Adress:</strong> Sirapsvägen 9, 123 56 Farsta</p>
+                        <p><strong>Telefon:</strong> <a href="tel:+4686440610" data-lang="contact.phone">08-6440610</a></p>
+                        <p><strong>E-post:</strong> <a href="mailto:info@sackpipa.com" data-lang="contact.email"> info@sackpipa.com</a></p>
+                        <p><strong>Adress:</strong> <span data-lang="contact.address">Sirapsvägen 9, 123 56 Farsta</span></p>
                     </div>
                     
                     <div class="social-media">
-                        <h4>Följ Oss</h4>
+                        <h4 data-lang="contact.followUs">Följ Oss</h4>
                         <div class="social-links">
-                            <a href="#" class="social-link">Facebook</a>
-                            <a href="#" class="social-link">Instagram</a>
-                            <a href="#" class="social-link">YouTube</a>
+                            <a href="#" class="social-link" data-lang="social.facebook">Facebook</a>
+                            <a href="#" class="social-link" data-lang="social.instagram">Instagram</a>
+                            <a href="#" class="social-link" data-lang="social.youtube">YouTube</a>
                         </div>
                     </div>
                 </div>
@@ -269,8 +271,8 @@
 
     <footer>
         <div class="footer-content">
-            <p>&copy; 2025 Stockholm Pipe Band. Alla rättigheter förbehållna.</p>
-            <p>Traditionell skotsk säckpipemusik sedan 2018</p>
+            <p data-lang="footer.copyright">&copy; 2025 Stockholm Pipe Band. Alla rättigheter förbehållna.</p>
+            <p data-lang="footer.tagline">Traditionell skotsk säckpipemusik sedan 2018</p>
         </div>
     </footer>
 
