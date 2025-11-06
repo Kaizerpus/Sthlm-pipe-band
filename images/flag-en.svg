@@ -2,19 +2,18 @@
   <!-- Blå bakgrund -->
   <rect width="20" height="15" fill="#012169"/>
   
-  <!-- Vita diagonaler -->
-  <polygon points="0,0 20,0 20,2 3,15 0,15" fill="white"/>
-  <polygon points="0,0 2,0 20,13 20,15 17,15 0,2" fill="white"/>
+  <!-- Vita diagonala streck (Saint Andrew's Cross) -->
+  <path d="M0,0 L20,15 M20,0 L0,15" stroke="white" stroke-width="1.5" fill="none"/>
   
-  <!-- Röda diagonaler -->
-  <polygon points="0,0 20,0 20,1 1,15 0,15" fill="#C8102E"/>
-  <polygon points="0,0 1,0 20,14 20,15 19,15 0,1" fill="#C8102E"/>
+  <!-- Röda diagonala streck (Saint Patrick's Cross) - offset -->
+  <path d="M0,0 L18,13.5 M2,0 L20,13.5" stroke="#C8102E" stroke-width="0.8" fill="none"/>
+  <path d="M20,0 L2,13.5 M18,0 L0,13.5" stroke="#C8102E" stroke-width="0.8" fill="none"/>
   
-  <!-- Vitt kors -->
+  <!-- Vitt kors (Saint George's Cross) -->
   <rect x="0" y="6" width="20" height="3" fill="white"/>
-  <rect x="8" y="0" width="4" height="15" fill="white"/>
+  <rect x="8.5" y="0" width="3" height="15" fill="white"/>
   
-  <!-- Rött kors -->
-  <rect x="0" y="6.5" width="20" height="2" fill="#C8102E"/>
-  <rect x="9" y="0" width="2" height="15" fill="#C8102E"/>
+  <!-- Rött kors (Saint George's Cross) -->
+  <rect x="0" y="7" width="20" height="1" fill="#C8102E"/>
+  <rect x="9.5" y="0" width="1" height="15" fill="#C8102E"/>
 </svg>
