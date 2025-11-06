@@ -858,25 +858,26 @@ footer {
 
 /* Tablet Portrait */
 @media (max-width: 768px) {
-    /* Ta bort sticky position för mobiler */
+    /* Ta bort sticky position och all scroll-relaterad funktionalitet för mobiler */
     header {
         position: static !important;
         top: auto !important;
+        padding: 1.5rem 0 !important; /* Fast padding, ingen dynamisk ändring */
+        transform: none !important;
     }
     
     .header-content {
-        padding: 0 1rem;
+        padding: 0 1rem !important;
         position: relative;
     }
     
-    /* Mobile header minimization adjustments */
+    /* Ta bort all scroll-relaterad styling */
     header.scrolled {
-        padding: 0.3rem 0;
+        display: none; /* Ska aldrig användas på mobiler */
     }
     
     header.scrolled .mobile-menu-toggle {
-        top: 0.5rem;
-        right: 1rem;
+        display: none; /* Ska aldrig användas på mobiler */
     }
     
     /* Show mobile menu toggle */
