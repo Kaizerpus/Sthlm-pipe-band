@@ -858,6 +858,12 @@ footer {
 
 /* Tablet Portrait */
 @media (max-width: 768px) {
+    /* Ta bort sticky position för mobiler */
+    header {
+        position: static !important;
+        top: auto !important;
+    }
+    
     .header-content {
         padding: 0 1rem;
         position: relative;
