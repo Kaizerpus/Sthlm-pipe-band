@@ -172,8 +172,10 @@ class LanguageManager {
             languageSelector = document.createElement('div');
             languageSelector.id = 'language-selector';
             languageSelector.innerHTML = `
-                <button class="lang-btn" data-lang="sv" title="Svenska">🇸🇪 SV</button>
-                <button class="lang-btn" data-lang="en" title="English">🇬🇧 EN</button>
+                <button class="lang-toggle-btn" title="Byt språk / Switch language">
+                    <span class="current-lang">🇸🇪</span>
+                    <span class="lang-text">SV</span>
+                </button>
             `;
             
             // Add to header
@@ -183,20 +185,32 @@ class LanguageManager {
             }
         }
 
-        // Add event listeners
-        languageSelector.querySelectorAll('.lang-btn').forEach(btn => {
-            btn.addEventListener('click', (e) => {
-                const lang = e.target.getAttribute('data-lang');
-                this.loadLanguage(lang);
+        // Add event listener for toggle
+        const toggleBtn = languageSelector.querySelector('.lang-toggle-btn');
+        if (toggleBtn) {
+            toggleBtn.addEventListener('click', () => {
+                const newLang = this.currentLanguage === 'sv' ? 'en' : 'sv';
+                this.loadLanguage(newLang);
             });
-        });
+        }
     }
 
     updateLanguageSelector() {
-        const buttons = document.querySelectorAll('#language-selector .lang-btn');
-        buttons.forEach(btn => {
-            btn.classList.toggle('active', btn.getAttribute('data-lang') === this.currentLanguage);
-        });
+        const toggleBtn = document.querySelector('.lang-toggle-btn');
+        const currentLangSpan = document.querySelector('.current-lang');
+        const langTextSpan = document.querySelector('.lang-text');
+        
+        if (toggleBtn && currentLangSpan && langTextSpan) {
+            if (this.currentLanguage === 'sv') {
+                currentLangSpan.textContent = '🇸🇪';
+                langTextSpan.textContent = 'SV';
+                toggleBtn.title = 'Byt till engelska / Switch to English';
+            } else {
+                currentLangSpan.textContent = '🇬🇧';
+                langTextSpan.textContent = 'EN';
+                toggleBtn.title = 'Byt till svenska / Switch to Swedish';
+            }
+        }
     }
 }
 
