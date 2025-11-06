@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="15" viewBox="0 0 20 15">
+  <!-- Blå bakgrund -->
+  <rect width="20" height="15" fill="#012169"/>
+  
+  <!-- Vita diagonaler -->
+  <polygon points="0,0 20,0 20,2 3,15 0,15" fill="white"/>
+  <polygon points="0,0 2,0 20,13 20,15 17,15 0,2" fill="white"/>
+  
+  <!-- Röda diagonaler -->
+  <polygon points="0,0 20,0 20,1 1,15 0,15" fill="#C8102E"/>
+  <polygon points="0,0 1,0 20,14 20,15 19,15 0,1" fill="#C8102E"/>
+  
+  <!-- Vitt kors -->
+  <rect x="0" y="6" width="20" height="3" fill="white"/>
+  <rect x="8" y="0" width="4" height="15" fill="white"/>
+  
+  <!-- Rött kors -->
+  <rect x="0" y="6.5" width="20" height="2" fill="#C8102E"/>
+  <rect x="9" y="0" width="2" height="15" fill="#C8102E"/>
+</svg>
