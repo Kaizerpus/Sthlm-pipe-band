@@ -880,28 +880,46 @@ footer {
         display: none; /* Ska aldrig användas på mobiler */
     }
     
-    /* Show mobile menu toggle */
+    /* Show mobile menu toggle - Sticky floating button */
     .mobile-menu-toggle {
         display: flex;
-        position: absolute;
+        position: fixed;
         right: 1rem;
         top: 1rem;
+        background: rgba(26, 85, 48, 0.95);
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+        backdrop-filter: blur(10px);
         transition: all 0.3s ease;
+        z-index: 2000;
     }
     
-    /* Hide navigation by default on mobile */
+    .mobile-menu-toggle:hover {
+        background: rgba(201, 169, 97, 0.95);
+        transform: scale(1.1);
+    }
+    
+    /* Hide navigation by default on mobile - Fullscreen overlay */
     nav {
-        position: absolute;
-        top: 100%;
+        position: fixed;
+        top: 0;
         left: 0;
         right: 0;
+        bottom: 0;
         background: linear-gradient(135deg, #1a5530 0%, #2d5016 100%);
         box-shadow: 0 4px 8px rgba(0,0,0,0.3);
         transform: translateY(-100%);
         opacity: 0;
         visibility: hidden;
         transition: all 0.3s ease;
-        z-index: 1000;
+        z-index: 1500;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
     
     /* Show navigation when mobile-open class is added */
@@ -913,9 +931,11 @@ footer {
     
     nav ul {
         flex-direction: column;
-        gap: 0;
-        padding: 1rem 0;
+        gap: 2rem;
+        padding: 2rem;
         margin: 0;
+        max-width: 400px;
+        width: 100%;
     }
     
     nav ul li {
@@ -924,25 +944,26 @@ footer {
     }
     
     nav ul li a {
-        padding: 1rem 2rem;
-        font-size: 1.1rem;
+        padding: 1.5rem 2rem;
+        font-size: 1.3rem;
         display: block;
         width: 100%;
-        text-align: left;
-        border-radius: 0;
-        background: transparent;
-        border: none;
-        border-bottom: 1px solid rgba(255,255,255,0.1);
+        text-align: center;
+        border-radius: 10px;
+        background: rgba(255,255,255,0.1);
+        border: 2px solid rgba(255,255,255,0.2);
     }
     
     nav ul li:last-child a {
+        margin-bottom: 0;
         border-bottom: none;
     }
     
     nav ul li a:hover {
-        background: rgba(201, 169, 97, 0.2);
-        transform: none;
-        box-shadow: none;
+        background: rgba(201, 169, 97, 0.8);
+        transform: translateY(-2px);
+        box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        border-color: #c9a961;
         border-color: transparent;
     }
     
@@ -1060,10 +1081,12 @@ footer {
     .mobile-menu-toggle {
         right: 0.5rem;
         top: 0.5rem;
+        width: 45px;
+        height: 45px;
     }
     
     .mobile-menu-toggle span {
-        width: 22px;
+        width: 20px;
         height: 2px;
     }
     
