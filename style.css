@@ -908,14 +908,14 @@ footer {
     header {
         position: static !important;
         top: auto !important;
-        padding: 2.5rem 0 0.75rem 0 !important; /* Extra padding-top för språkknappen */
+        padding: 3.5rem 0 1rem 0 !important; /* Mer padding för att rymma språkknappen och texten */
         transform: none !important;
     }
     
     .header-content {
         padding: 0 1rem !important;
         position: relative;
-        padding-top: 1rem !important; /* Extra padding för att ge plats åt språkknappen */
+        margin-top: 3rem !important; /* Flytta ner hela header-innehållet */
     }
     
     /* Ta bort all scroll-relaterad styling */
@@ -960,7 +960,7 @@ footer {
     
     h1 {
         font-size: 2rem;
-        margin-top: 0.5rem; /* Extra utrymme för språkknappen */
+        margin-top: 2rem !important; /* Flytta ner titeln rejält för att ge plats åt språkknappen */
     }
     
     h2 {
