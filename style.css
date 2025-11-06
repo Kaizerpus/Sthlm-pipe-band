@@ -885,54 +885,13 @@ footer {
         display: none !important;
     }
     
-    /* Visa navigation direkt på mobiler */
+    /* Ta bort navigation helt för mobiler */
     nav {
-        position: static !important;
-        background: transparent !important;
-        box-shadow: none !important;
-        transform: none !important;
-        opacity: 1 !important;
-        visibility: visible !important;
-        z-index: auto !important;
-        display: block !important;
+        display: none !important;
     }
     
-    nav ul {
-        flex-direction: column;
-        gap: 0.5rem;
-        padding: 1rem 0;
-        margin: 0;
-        justify-content: center;
-    }
-    
-    nav ul li {
-        margin: 0;
-        width: 100%;
-    }
-    
-    nav ul li a {
-        padding: 0.75rem 1rem;
-        font-size: 1rem;
-        display: block;
-        width: 100%;
-        text-align: center;
-        border-radius: 5px;
-        background: rgba(255,255,255,0.1);
-        border: 1px solid rgba(255,255,255,0.2);
-        margin-bottom: 0.5rem;
-    }
-    
-    nav ul li:last-child a {
-        margin-bottom: 0;
-        border-bottom: none;
-    }
-    
-    nav ul li a:hover {
-        background: rgba(201, 169, 97, 0.8);
-        border-color: #c9a961;
-        transform: none;
-        box-shadow: none;
-    }
+    h1 {
+        font-size: 2rem;
     }
     
     h1 {
@@ -1052,13 +1011,6 @@ footer {
     
     .mobile-menu-toggle span {
         display: none;
-    }
-    
-    /* Navigation adjustments for phones */
-    nav ul li a {
-        padding: 0.75rem 1rem;
-        font-size: 0.9rem;
-        margin-bottom: 0.3rem;
     }
     
     /* Main content adjustments */
