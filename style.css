@@ -862,7 +862,7 @@ footer {
     header {
         position: static !important;
         top: auto !important;
-        padding: 1.5rem 0 !important; /* Fast padding, ingen dynamisk ändring */
+        padding: 0.75rem 0 !important; /* Mycket mindre padding för mobiler */
         transform: none !important;
     }
     
@@ -1044,15 +1044,16 @@ footer {
     
     /* Header adjustments */
     header {
-        padding: 1.5rem 0;
+        padding: 0.5rem 0 !important; /* Ännu mindre padding för små telefoner */
+        position: static !important;
     }
     
     header.scrolled {
-        padding: 0.2rem 0;
+        display: none; /* Ska aldrig användas på mobiler */
     }
     
     .header-content {
-        padding: 0 0.5rem;
+        padding: 0 0.5rem !important;
     }
     
     /* Mobile menu adjustments for phones */
