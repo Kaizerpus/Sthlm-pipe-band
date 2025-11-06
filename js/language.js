@@ -173,7 +173,7 @@ class LanguageManager {
             languageSelector.id = 'language-selector';
             languageSelector.innerHTML = `
                 <button class="lang-toggle-btn" title="Byt språk / Switch language">
-                    <span class="current-lang">🇸🇪</span>
+                    <span class="flag-icon flag-sv"></span>
                     <span class="lang-text">SV</span>
                 </button>
             `;
@@ -197,16 +197,16 @@ class LanguageManager {
 
     updateLanguageSelector() {
         const toggleBtn = document.querySelector('.lang-toggle-btn');
-        const currentLangSpan = document.querySelector('.current-lang');
+        const flagIcon = document.querySelector('.flag-icon');
         const langTextSpan = document.querySelector('.lang-text');
         
-        if (toggleBtn && currentLangSpan && langTextSpan) {
+        if (toggleBtn && flagIcon && langTextSpan) {
             if (this.currentLanguage === 'sv') {
-                currentLangSpan.textContent = '🇸🇪';
+                flagIcon.className = 'flag-icon flag-sv';
                 langTextSpan.textContent = 'SV';
                 toggleBtn.title = 'Byt till engelska / Switch to English';
             } else {
-                currentLangSpan.textContent = '🇬🇧';
+                flagIcon.className = 'flag-icon flag-en';
                 langTextSpan.textContent = 'EN';
                 toggleBtn.title = 'Byt till svenska / Switch to Swedish';
             }
