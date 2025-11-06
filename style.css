@@ -908,13 +908,14 @@ footer {
     header {
         position: static !important;
         top: auto !important;
-        padding: 0.75rem 0 !important; /* Mycket mindre padding för mobiler */
+        padding: 2.5rem 0 0.75rem 0 !important; /* Extra padding-top för språkknappen */
         transform: none !important;
     }
     
     .header-content {
         padding: 0 1rem !important;
         position: relative;
+        padding-top: 1rem !important; /* Extra padding för att ge plats åt språkknappen */
     }
     
     /* Ta bort all scroll-relaterad styling */
@@ -959,10 +960,7 @@ footer {
     
     h1 {
         font-size: 2rem;
-    }
-    
-    h1 {
-        font-size: 2rem;
+        margin-top: 0.5rem; /* Extra utrymme för språkknappen */
     }
     
     h2 {
